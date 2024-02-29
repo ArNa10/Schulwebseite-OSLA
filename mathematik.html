@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+     <title>Schulwebseite OSLA</title>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+
+
+ <!--link rel="stylesheet" href="styles.css" /-->
+<link rel="stylesheet" href="styles.css" />
+<body>
+<main>
+  <header>
+    <img src="OSLA.jpg">
+  </header>
+
+  <nav>
+    <a href="/index.html" >Startseite</a>
+    <a href="/mathematik.html">Mathematik</a>
+    <a href="/deutsch.html">Deutsch</a>
+    <a href="/franzoesisch.html">Französisch</a>
+    <a href="/nmg.html">NMG</a>
+    <a href="/gestalten.html">Gestalten</a>
+    <a href="/dinogame.html">Dino Game</a>
+  </nav>
+
+<section>
+  <h1>Mathematik</h1>
+  <p>"Mathematik ist die schönste und mächtigste Schöpfung des menschlichen Geistes." </p>
+    - Stefan Banach, polnischer Mathematiker
+    <br></br>
+    <p>"Mach dir keine Sorgen wegen deiner Schwierigkeiten mit der Mathematik. Ich kann dir versichern, dass meine noch größer sind."</p>
+      - Albert Einstein
+    <Footer>
+      <p>Unten findest du nützliche Links die dir den Mathematik Unterricht erleichtern können.:)</p>
+    </Footer>
+</section>
+
+<aside>
+
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+      }
+      .calculator {
+          width: 300px;
+          margin: 50px auto;
+          border: 2px solid #ccc;
+          border-radius: 5px;
+          padding: 20px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          display: flex;
+          flex-direction: column;
+      }
+      .display {
+          width: 100%;
+          margin-bottom: 10px;
+          padding: 10px;
+          font-size: 18px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+      }
+      .buttons {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-end;
+      }
+      button {
+          width: 50px;
+          height: 50px;
+          font-size: 20px;
+          margin: 5px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+      button.operator {
+          background-color: #f0f0f0;
+      }
+      button.equal {
+          background-color: #f79220;
+          color: #fff;
+      }
+  </style>
+
+  
+  <div class="calculator">
+      <input type="text" class="display" id="display" disabled>
+      <div class="buttons">
+          <button onclick="appendNumber('7')">7</button>
+          <button onclick="appendNumber('4')">4</button>
+          <button onclick="appendNumber('1')">1</button>
+          <button onclick="appendNumber('0')">0</button>
+          <button class="operator" onclick="appendOperator('/')">/</button>
+          <button class="operator" onclick="appendOperator('*')">*</button>
+          <button class="operator" onclick="appendOperator('-')">-</button>
+          <button class="operator" onclick="appendOperator('+')">+</button>
+          <button onclick="appendNumber('8')">8</button>
+          <button onclick="appendNumber('5')">5</button>
+          <button onclick="appendNumber('2')">2</button>
+          <button onclick="clearDisplay()">C</button>
+          <button class="equal" onclick="calculate()">=</button>
+          <button onclick="appendNumber('9')">9</button>
+          <button onclick="appendNumber('6')">6</button>
+          <button onclick="appendNumber('3')">3</button>
+      </div>
+  </div>
+  
+  <script>
+      let displayValue = '';
+  
+      function updateDisplay() {
+          document.getElementById('display').value = displayValue;
+      }
+  
+      function appendNumber(num) {
+          displayValue += num;
+          updateDisplay();
+      }
+  
+      function appendOperator(op) {
+          displayValue += op;
+          updateDisplay();
+      }
+  
+      function clearDisplay() {
+          displayValue = '';
+          updateDisplay();
+      }
+  
+      function calculate() {
+          try {
+              displayValue = eval(displayValue);
+              updateDisplay();
+          } catch (error) {
+              displayValue = 'Error';
+              updateDisplay();
+          }
+      }
+  </script>
+  <footer>
+   <p> Dieser Taschenrechner wurde nicht selbst programmiert und wurde aus dem Internet kopiert.
+    Aber er ist Funktionsfähig.
+   </p>
+  </footer>
+
+</aside>
+
+<Section>
+  <div>
+    <ul>
+    <a target="_blank" rel="noopener noreferrer" href="https://www.mathbuch.info/" >Mathbuch</a>
+    <br></br>
+    <a target="_blank" rel="noopener noreferrer" href="https://web2.0rechner.de/" >Taschenrechner</a>
+    <br></br>
+    <a target="_blank" rel="noopener noreferrer" href="https://www.mathepower.com/gleichungen.php" >Gleichungs Rechner</a>
+    <br></br>
+    <a target="_blank" rel="noopener noreferrer" href="https://www.aufgabenfuchs.de/index.shtml">Aufgabenfuchs</a>
+    </ul>
+  </div>
+
+</Section>
+
+<!--Taschenrechner hinzufügen in aside-->
+
+
+<footer>
+  <!-- Der Fussbereich für abschliessende Inhalte -->
+   <div>
+    <p>Oberstufe Langnau OSLA</p>
+    <p>Schulhaus OSLA</p>
+    <p>Höheweg 10</p>
+    <p>3550 Langnau i.E.</p>
+    <p>+41 34 402 36 76</p>
+    <p>+41 79 380 67 20</p>
+    <p>Für Eltern sonst über Klapp:)</p>
+   </div>
+  
+</footer>
+
+</main>
+</body>
+</html>
