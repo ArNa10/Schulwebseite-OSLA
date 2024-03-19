@@ -6,10 +6,9 @@
     font-family: 'Monteserat', Arial, sans-serif;
 }
 
-header,
-nav,
+
 section,
-aside,
+aside, 
 footer {
     text-align: center;
     border-radius: 7px;
@@ -19,44 +18,61 @@ footer {
 }
 
 header {
-    width: 35%;
-    margin: 25px 25px 25px 25px;
-    display: inline-block;
+    text-align: center;
+    border-radius: 7px;
+    border-bottom: 3px solid white ;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+    width: 100%;
+    display:flex;
+
 }
 
-nav {
-    width: calc(65% - 75px);
-    margin: 25px 25px 25px 0px;
-    float: right;
+.navlist{
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+.navlist a{
+    text-decoration: none;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+    font-family: 'Monteserat', Arial, sans-serif ;
+}
+.navlist a:hover{
+    border-bottom: 2px solid #999999;
 }
 
-aside {
-    width: 25%;
-    float: left;
-    min-height: 517px;
+
+
   
-}
-
 section {
     float: left;
     width: calc(75% - 75px);
     margin: 0 25px 25px 25px;
 }
+
 section header,
 section article,
 section footer {
     width: 100%;
+
     border-radius: 7px;
     border: 2px solid #e5e5e5;
     box-shadow: none;
     margin: 25px 0px 0px 0px;
     padding: 50px;
 }
+
 footer {
-    width: 96.5%;
-    margin: 25px 25px 0px 25px;
+    width: 96.5%; 
+    margin: 77px 25px 0px 25px;
     clear: both;
 }
+
 header img {
     height: 40px;
     width: 120px;
@@ -64,6 +80,9 @@ header img {
     justify-content: center;
     align-items: center;
 }
+
+
+
 h1{
     font-size: 40px;
     text-decoration: underline;
@@ -72,3 +91,32 @@ h6{
     font-size: 0.007px;
     text-decoration: none;
 }
+
+
+  .column {
+    float: left;
+    padding: 10px;
+    height: 300px; 
+    
+}
+  
+.left{
+    width: 75%;
+  }
+  .right{
+    width: 25%;
+    margin: 50px 0 0 0;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+  @media screen and (max-width: 800px) {
+    .column {
+      width: 100%;
+    }
+  }
