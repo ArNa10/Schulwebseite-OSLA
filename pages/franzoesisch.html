@@ -5,28 +5,28 @@
      <title>Schulwebseite OSLA</title>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 
 <link rel="stylesheet" href="styles.css" />
 <body>
-<main>
+
   <header>
     <img src="OSLA.jpg">
-  </header>
+  
 
-  <nav>
+  <ul class="navlist">
     <a href="/index.html" >Startseite</a>
-    <a href="/mathematik.html">Mathematik</a>
-    <a href="/deutsch.html">Deutsch</a>
-    <a href="/franzoesisch.html">Französisch</a>
-    <a href="/nmg.html">NMG</a>
-    <a href="/gestalten.html">Gestalten</a>
-    <a href="/dinogame.html">Dino Game</a>
-  </nav>
+    <a href="/pages/mathematik.html">Mathematik</a>
+    <a href="/pages/deutsch.html">Deutsch</a>
+    <a href="/pages/franzoesisch.html">Französisch</a>
+    <a href="/pages/nmg.html">NMG</a>
+    <a href="/pages/gestalten.html">Gestalten</a>
+    <a href="/pages/dinogame.html">Dino Game</a>
+  </ul>
+</header>
 
-
-<section>
+<div class="row">
+  <div class="column left">
   <h1>Französisch</h1>
   <p>Französisch ist die Sprache, die selbst Schmutz in Romatik verwandelt. </p>
   - Stephen King
@@ -37,8 +37,10 @@
   <p>Unten findest du nützliche Links die dir den Französisch Unterricht erleichtern können:)</p>
 </footer>
 
-</section>
-
+  </div>
+  <div class="column right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quasi est eaque quidem accusamus.
+     Velit at explicabo dolorem optio, numquam dolorum quis, obcaecati animi quam sint facere autem porro suscipit.</div>
+</div>
 
 <Section>
   <div>
@@ -55,7 +57,6 @@
 
 </Section>
 
-<!--Etw kreatives in aside odr so-->
 
 <footer>
    <div>
@@ -70,6 +71,5 @@
   
 </footer>
 
-</main>
 </body>
 </html>
