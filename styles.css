@@ -8,8 +8,8 @@
 
 
 section,
-aside, 
-footer {
+aside
+{
     text-align: center;
     border-radius: 7px;
     border: 4px solid#e5e5e5;
@@ -32,6 +32,7 @@ header {
     display: flex;
     position: relative;
     width: 100%;
+    flex-direction: column;
 }
 .navlist a{
     text-decoration: none;
@@ -44,6 +45,7 @@ header {
 }
 .navlist a:hover{
     border-bottom: 2px solid #999999;
+    flex-direction: column;
 }
 
 
@@ -68,9 +70,15 @@ section footer {
 }
 
 footer {
-    width: 96.5%; 
-    margin: 77px 25px 0px 25px;
+    text-align: center;
+    width: 100%;
+    display: flex; 
+    margin: 25px 0px 0px 0px;
     clear: both;
+    border-radius: 7px;
+    border-bottom: 3px solid white ;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
 }
 
 header img {
@@ -119,4 +127,8 @@ h6{
     .column {
       width: 100%;
     }
+    .navlist{
+        width: 100%;
+    }
   }
+
