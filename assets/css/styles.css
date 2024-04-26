@@ -1,150 +1,163 @@
 * {
-    color: #999999;
-    font-size: 20px;
-    font-weight: 300;
-    box-sizing: border-box;
-    font-family: 'Monteserat', Arial, sans-serif;
-}
-
-
-section,
-aside
-{
-    text-align: center;
-    border-radius: 7px;
-    border: 4px solid#e5e5e5;
-    padding: 25px;
-    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+  color: #999999;
+  font-size: 20px;
+  font-weight: 300;
+  box-sizing: border-box;
+  font-family: 'Monteserat', Arial, sans-serif;
 }
 
 header {
-    text-align: center;
-    border-radius: 7px;
-    border-bottom: 3px solid white ;
-    background: white;
-    box-shadow: 0 5px 15px rgba(0,0,0,.08);
-    width: 100%;
-    display:flex;
+  text-align: center;
+  border-radius: 7px;
+  border-bottom: 3px solid white ;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,.08);
+  width: 100%;
+  display:flex;
 
 }
 
-.navlist{
-    display: flex;
-    position: relative;
-    width: 100%;
-    flex-direction: column;
+.navlist {
+  display: flex;
+  width: 100%;
+  flex-direction: row; /* Anordnung der Elemente in einer Zeile */
+  justify-content: center; /* Zentriert die Navigationslinks horizontal */
+  flex-wrap: wrap; /* Erlaubt das Umfließen der Elemente auf kleineren Bildschirmen */
+  padding: 0; /* Entfernt das Padding */
 }
-.navlist a{
-    text-decoration: none;
-    margin-left: 60px;
-    font-size: 15px;
-    font-weight: 600;
-    border-bottom: 2px solid transparent;
-    transition: all .55s ease;
-    font-family: 'Monteserat', Arial, sans-serif ;
+
+.navlist a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  padding: 12px 15px; /* Leichtes Padding für jedes Navigationsitem */
+  margin: 0 10px; /* Abstand zwischen den Links */
+  border-bottom: 2px solid transparent; /* Transparente Unterstreichung, die bei Hover sichtbar wird */
+  transition: background-color .3s, color .3s, border-color .3s; /* Weiche Übergänge */
 }
-.navlist a:hover{
-    border-bottom: 2px solid #999999;
-    flex-direction: column;
+
+.navlist a:hover {
+  background-color: #e2e2e2; /* Ändert die Hintergrundfarbe bei Hover */
+  color: #000; /* Ändert die Textfarbe bei Hover */
+  border-bottom: 2px solid #999999; /* Fügt eine Unterstreichung bei Hover hinzu */
 }
 
 
-
-  
 section {
-    float: left;
-    width: calc(75% - 75px);
-    margin: 0 25px 25px 25px;
+  float: left;
+  width: calc(75% - 75px);
+  margin: 50px;
+  margin-top: 150px;
+  text-align: center;
+  clear: both;
+  border-radius: 7px;
+  border-bottom: 3px solid white;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,.08);
 }
 
-section header,
-section article,
-section footer {
-    width: 100%;
 
-    border-radius: 7px;
-    border: 2px solid #e5e5e5;
-    box-shadow: none;
-    margin: 25px 0px 0px 0px;
-    padding: 50px;
-}
 
+/* hier wurde auch geändert */
 footer {
-    text-align: center;
-    width: 100%;
-    display: flex; 
-    margin: 25px 0px 0px 0px;
-    clear: both;
-    border-radius: 7px;
-    border-bottom: 3px solid white ;
-    background: white;
-    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 190px;
+  clear: both;
+  border-radius: 7px;
+  border-bottom: 3px solid white;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,.08);
 }
 
 header img {
-    height: 40px;
-    width: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 40px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .urlLinks{
-    margin: 100px;
-    margin-left: 50px;
-    text-align: center;
-    
+  margin: 100px;
+  margin-left: 50px;
+  text-align: center;
+  
 }
 
 
 h1{
-    font-size: 40px;
-    text-decoration: underline;
-    text-align: center;
+  font-size: 40px;
+  text-decoration: underline;
+  text-align: center;
 }
 h6{
-    font-size: 0.007px;
-    text-decoration: none;
+  font-size: 1px;
+  text-decoration: none;
 }
 
-
-  .column {
-    float: left;
-    padding: 10px;
-    height: 300px; 
-    
-}
+.column {
+  float: left;
+  padding: 50px;
+  height: 300px; 
   
+}
+
 .left{
-    width: 75%;
-  }
-  .right{
-    width: 25%;
-    margin: 75px 0 0 0;
+  width: 75%;
+}
+.right{
+  width: 25%;
+  margin: 75px 0 0 0;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.footerCalc{
+  padding: 100px;
+  margin: 80px;
+}
+
+
+.easterEgg{
+  margin-top: 600px;
+}
+
+.marginTop{
+  float: left;
+  width: calc(75% - 75px);
+  margin: 50px;
+  margin-top: 220px;
+  text-align: center;
+  clear: both;
+  border-radius: 7px;
+  border-bottom: 3px solid white;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,.08);
+}
+
+
+@media screen and (max-width: 800px) {
+  .navlist {
+      flex-direction: column;
   }
 
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-
-  @media screen and (max-width: 800px) {
-    .column {
-      width: 100%;
-    }
-    .navlist{
-        width: 100%;
-    }
-    .urlLinks{
-        margin-top: 300px;
-        padding-right: 300px;
-        text-align: center;
-        margin-bottom: 30px;
-    }
+  .navlist a {
+      margin-left: 0;
+      text-align: center; 
+      padding: 10px 0;
   }
 
-  .textAlign{
-    text-align: center !important;
+  .urlLinks {
+      margin-top: 300px;
+      padding-right: 300px;
+      text-align: center;
+      margin-bottom: 30px;
   }
+}
